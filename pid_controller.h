@@ -20,6 +20,7 @@ class PIDController
   double d_period_in_sec;
   unsigned int d_period;
   bool d_ready;
+  bool d_state;
 
   public:
     PIDController(double kp, double ki, double kd, double setpoint, double kb = 1.0, double smooth = 0.25);
@@ -27,6 +28,8 @@ class PIDController
     void setConstraints(double min, double max);
     void setSetpoint(double setpoint);
     void setSamplePeriod(unsigned int period);
+    void setState(bool state);
+    void reset();
     double getKp() const;
     double getKi() const;
     double getKd() const;
