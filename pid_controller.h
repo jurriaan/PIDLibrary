@@ -1,6 +1,5 @@
 #ifndef PID_CONTROLLER_H
 #define PID_CONTROLLER_H
-#include <cstddef>
 
 class PIDController
 {
@@ -46,11 +45,11 @@ class PIDController
     double control(double input);
 
   private:
-    double constrain(double val);
+    double _constrain(double val);
     double calculateOutput();
 };
 
-inline double PIDController::constrain(double val)
+inline double PIDController::_constrain(double val)
 {
   if (val > d_max)
     return d_max;

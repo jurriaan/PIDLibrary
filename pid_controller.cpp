@@ -67,8 +67,8 @@ double PIDController::control(double input)
 
   d_output = calculateOutput();
 
-  d_integral += d_kb * (constrain(d_output) - d_output);
+  d_integral += d_kb * (_constrain(d_output) - d_output);
   d_input = input;
 
-  return d_output = constrain(calculateOutput());
+  return d_output = _constrain(calculateOutput());
 }
