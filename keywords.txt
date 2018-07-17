@@ -1,7 +1,7 @@
-PIDController   KEYWORD1
+PIDController	KEYWORD1
 
-control KEYWORD2
-setConstraints KEYWORD2
-setParameters KEYWORD2
-setSamplePeriod KEYWORD2
-setSetpoint KEYWORD2
+control	KEYWORD2
+setConstraints	KEYWORD2
+setParameters	KEYWORD2
+setSamplePeriod	KEYWORD2
+setSetpoint	KEYWORD2
